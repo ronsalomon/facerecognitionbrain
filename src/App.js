@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import Logo from './components/Logo/Logo';
 import Clarifai from 'clarifai';
 import Particles from 'react-particles-js';
 import Navigation from './components/Navigation/Navigation';
 import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
-import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
@@ -89,9 +89,9 @@ class App extends Component {
         <Particles className='particles'
           params={particlesOptions} />
           <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
+          <Logo />
           {route === 'home' 
             ? <div>
-                <Logo />
                 <Rank />
                 <ImageLinkForm 
                   onInputChange={this.onInputChange}
