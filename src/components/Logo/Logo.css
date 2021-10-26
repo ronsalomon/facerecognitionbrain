@@ -2,3 +2,7 @@
   background: rgb(210,155,179);
   background: radial-gradient(circle, rgba(210,155,179,1) 10%, rgb(134, 181, 238) 100%);
 }
+
+.br-100 {
+  border-radius: 100%;
+}
